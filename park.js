@@ -4,5 +4,8 @@ const Park = function(name, price ){
   this.dinosaurs = []
 };
 
+Park.prototype.numberOfDinosaurs = function () {
+  return this.dinosaurs.length;
+};
 
 module.exports = Park;

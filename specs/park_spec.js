@@ -25,12 +25,17 @@ describe('Park', function() {
   it("should have a ticket price", function(){
     assert.strictEqual(park.price, 10);
   });
-
+ // starts with empty  array [] of dinosaurs
   describe("dinosaurs", function(){
     it("should start with no dinosaurs", function(){
       const actual = park.dinosaurs;
       assert.deepStrictEqual(actual, [])
     });
+
+    it('should be able to return the number of dinosaurs', function(){
+       const actual = park.numberOfDinosaurs()
+       assert.strictEqual(actual, 0)
+     })
 
   });
 });
