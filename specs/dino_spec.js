@@ -30,4 +30,6 @@ describe('Dinosaur', function() {
     assert.strictEqual(dinosaur.numberOfVisitersPerDay, 5);
   })
 
+  
+
 });

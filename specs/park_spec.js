@@ -16,14 +16,21 @@ describe('Park', function() {
 
   beforeEach(function(){
     park = new Park("Dino_Park", 10 );
-    })
+  });
 
-    it("should have a spark name", function(){
-      assert.strictEqual(park.name, "Dino_Park");
-    })
+  it("should have a spark name", function(){
+    assert.strictEqual(park.name, "Dino_Park");
+  });
 
-    it("should have a ticket price", function(){
-      assert.strictEqual(park.price, 10);
-    })
+  it("should have a ticket price", function(){
+    assert.strictEqual(park.price, 10);
+  });
+
+  describe("dinosaurs", function(){
+    it("should start with no dinosaurs", function(){
+      const actual = park.dinosaurs;
+      assert.deepStrictEqual(actual, [])
+    });
 
   });
+});
