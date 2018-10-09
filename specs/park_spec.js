@@ -39,11 +39,22 @@ describe('Park', function() {
        const actual = park.numberOfDinosaurs()
        assert.strictEqual(actual, 0)
      })
-     it('should be able to add a dinosaur to its collection ', function(){
+     // add dinosaur
+     it('should be able to add a dinosaur to its collection of dinosaurs ', function(){
         park.addDinosaur(dino2)
         const actual = park.numberOfDinosaurs()
         assert.strictEqual(actual, 1)
       })
+
+      // remove dinosaur
+      it('should be able to Remove a dinosaur from its collection of dinosaurs ', function(){
+         park.addDinosaur(dino2)
+         park.addDinosaur(dino3)
+         park.removeDinosaur(dino2)
+         const actual = [dino3]
+         const expected = park.dinosaurs
+         assert.deepStrictEqual(actual, expected)
+       })
 
   });
 });
