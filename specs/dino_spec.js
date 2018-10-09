@@ -1,5 +1,11 @@
 // https://gist.github.com/LouiseReid/62436e1b07e7ac041ee9573cb0a5b7de
 
+// A dinosaur must have:
+//
+// A species
+// A diet (e.g. carnivore, herbivore or omnivore)
+// An average number of visitors attracted per day
+
 const assert = require('assert');
 const Dinosaur = require('../dino.js');
 

@@ -1,3 +1,11 @@
+//
+// A park must have:
+//
+// A name
+// A ticket price
+// A collection of dinosaurs
+
+
 const assert = require('assert');
 const Dinosaur = require('../dino.js');
 const Park = require('../park.js');
