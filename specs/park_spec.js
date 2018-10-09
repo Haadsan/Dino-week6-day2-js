@@ -39,6 +39,11 @@ describe('Park', function() {
        const actual = park.numberOfDinosaurs()
        assert.strictEqual(actual, 0)
      })
+     it('should be able to add a dinosaur to its collection ', function(){
+        park.addDinosaur(dino2)
+        const actual = park.numberOfDinosaurs()
+        assert.strictEqual(actual, 1)
+      })
 
   });
 });
