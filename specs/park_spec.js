@@ -16,6 +16,9 @@ describe('Park', function() {
 
   beforeEach(function(){
     park = new Park("Dino_Park", 10 );
+    dinosaur = new Dinosaur("T-rex", "carnivore", 30 );
+    dino2 = new Dinosaur("Mammut", "herbivore", 10)
+    dino3 = new Dinosaur("Compsognathus" , "carnivore", 5)
   });
 
   it("should have a spark name", function(){

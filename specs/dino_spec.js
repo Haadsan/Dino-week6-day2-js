@@ -15,7 +15,7 @@ describe('Dinosaur', function() {
   let dinosaur;
 
   beforeEach(function(){
-    dinosaur = new Dinosaur("T-rex", "carnivore", 5 );
+    dinosaur = new Dinosaur("T-rex", "carnivore", 30 );
   });
 
   it("should have a species type", function(){
@@ -27,9 +27,9 @@ describe('Dinosaur', function() {
   })
 
   it("should have a number of visitors", function(){
-    assert.strictEqual(dinosaur.numberOfVisitersPerDay, 5);
+    assert.strictEqual(dinosaur.numberOfVisitersPerDay, 30);
   })
 
-  
+
 
 });
